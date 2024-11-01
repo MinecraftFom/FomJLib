@@ -9,22 +9,22 @@ Next, you need to add a annoiation before every function:
 
 *Example Code*
 
-@package com.example
-import api.jlibs.io.init_interpreter.InitInterpreter;
-import api.jlibs.io.init_interpreter.RegistryMethod;
+    package com.example
+    import api.jlibs.io.init_interpreter.InitInterpreter;
+    import api.jlibs.io.init_interpreter.RegistryMethod;
 
-public class examplecode extends InitInterpreter
-{
-    public void main()
+    public class examplecode extends InitInterpreter
     {
-        InitInterpreter example;
-        this.name="EXAMPLE";
-        example.init();
-    }
+        public void main()
+        {
+            InitInterpreter example;
+            this.name="EXAMPLE";
+            example.init();
+        }    
 
-    @RegistryMethod("EXAMPLE")
-    public void cbbfunc()
-    {
-        System.out.println("CBB IS CLEVER MANN IN ZIZHU");
+        @RegistryMethod("EXAMPLE")
+        public void cbbfunc()
+        {
+            System.out.println("CBB IS CLEVER MANN IN ZIZHU");
+        }
     }
-}
