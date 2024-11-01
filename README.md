@@ -9,7 +9,7 @@ Next, you need to add a annoiation before every function:
 
 *Example Code*
 
-package com.example
+@package com.example
 import api.jlibs.io.init_interpreter.InitInterpreter;
 import api.jlibs.io.init_interpreter.RegistryMethod;
 
